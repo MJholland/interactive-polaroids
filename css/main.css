@@ -13,7 +13,8 @@ html {
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
 
-  transform: rotate(10deg);
+  left: 50%;
+  transform: rotate(5deg);
   transition: all 200ms linear;
 }
 
@@ -39,13 +40,20 @@ figcaption {
 
 figure:first-of-type {
   transform: rotate(-10deg);
+  left: 45%;
+  top: 110px;
+  z-index: -2;
 }
 
 figure:last-of-type {
   transform: rotate(20deg);
+  left: 55%;
+  top: -200px;
+  z-index: -1;
 }
 
 .polaroid:hover {
   transform: rotate(0);
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 1);
+  z-index: 1;
 }
